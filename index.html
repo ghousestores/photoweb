@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PhotoShare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="logo">
+            Photo<span>Share</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#upload">Upload</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">SHARE YOUR MOMENTS</p>
+
+            <h1>
+                Upload Photos.<br>
+                Share Moments.
+            </h1>
+
+            <p class="hero-text">
+                Upload your favorite photos and let people
+                share their thoughts through comments.
+            </p>
+
+            <a href="#upload" class="hero-button">
+                Upload a Photo
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- UPLOAD SECTION -->
+    <section class="upload-section" id="upload">
+
+        <div class="section-title">
+
+            <p>CREATE A POST</p>
+
+            <h2>Upload Your Photo</h2>
+
+        </div>
+
+
+        <div class="upload-card">
+
+            <div class="upload-icon">
+                +
+            </div>
+
+            <h3>Select a Photo</h3>
+
+            <p>
+                Choose an image from your computer.
+            </p>
+
+            <label for="photoInput" class="upload-button">
+                Choose Photo
+            </label>
+
+            <input
+                type="file"
+                id="photoInput"
+                accept="image/*"
+                hidden
+            >
+
+            <!-- IMAGE PREVIEW -->
+            <div id="previewContainer" class="preview-container">
+
+                <img id="imagePreview" src="" alt="Photo preview">
+
+            </div>
+
+
+            <!-- CAPTION -->
+            <div class="caption-area">
+
+                <label for="photoCaption">
+                    Caption
+                </label>
+
+                <textarea
+                    id="photoCaption"
+                    placeholder="Write something about this photo..."
+                    rows="4"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                id="postPhotoButton"
+                class="post-button"
+            >
+                Post Photo
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-title">
+
+            <p>COMMUNITY</p>
+
+            <h2>Photo Gallery</h2>
+
+        </div>
+
+
+        <div id="photoGallery" class="photo-gallery">
+
+            <!-- Photos will be inserted here by JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            Photo<span>Share</span>
+        </div>
+
+        <p>
+            © 2026 PhotoShare. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
